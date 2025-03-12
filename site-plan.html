@@ -3,70 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce</title>
+    <title>Course Home Page</title>
     <link rel="stylesheet" href="style/site-plan.css">
-    <!-- Font Awesome for Social Media Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Abia Chamber of Commerce</h1>
+        <div class="profile">
+            <img src="images/profile.jpg" alt="Profile Picture">
+            <h1>Rubia M. Francesco</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#membership">Membership</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#directory">Business Directory</a></li>
-                <li><a href="#resources">Resources</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">GitHub Profile</a></li>
+                <li><a href="#">LinkedIn</a></li>
             </ul>
         </nav>
     </header>
     
-    <section id="home">
-        <h2>Welcome to the Abia State Chamber of Commerce</h2>
-        <p>Fostering economic growth and supporting local businesses.</p>
-    </section>
-    
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Learn about our mission, history, and leadership team.</p>
-    </section>
-    
-    <section id="membership">
-        <h2>Membership</h2>
-        <p>Discover the benefits of joining the chamber and how to apply.</p>
-    </section>
-    
-    <section id="events">
-        <h2>Events</h2>
-        <p>Stay updated on upcoming networking opportunities and workshops.</p>
-    </section>
-    
-    <section id="directory">
-        <h2>Business Directory</h2>
-        <p>Explore our list of local businesses and services.</p>
-    </section>
-    
-    <section id="resources">
-        <h2>Resources</h2>
-        <p>Find business guides, economic reports, and marketing tools.</p>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Get in touch with us for more information.</p>
-    </section>
+    <main>
+        <h2>Home</h2>
+        <div class="content-grid">
+            <div class="card">
+                <h3>Course Work</h3>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Toloria, Madagascar</h3>
+                <img src="images/baobab.jpg" alt="Baobab Trees">
+                <p>Baobab Trees</p>
+            </div>
+        </div>
+        
+        <section class="course-section">
+            <h3>Web and Computer Programming Certificate</h3>
+            <div class="filters">
+                <button>All</button>
+                <button>CSE</button>
+                <button>WDD</button>
+            </div>
+            <div class="course-list">
+                <button class="course">CSE 110</button>
+                <button class="course">WDD 130</button>
+                <button class="course">CSE 111</button>
+                <button class="course">CSE 210</button>
+                <button class="course">WDD 131</button>
+                <button class="course">WDD 231</button>
+            </div>
+        </section>
+    </main>
     
     <footer>
-        <p>&copy; 2025 Abia Chamber of Commerce. All rights reserved.</p>
-        <div class="social-links">
-            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        </div>
+        <p>&copy; 2025 🌸 Rubia Magdalena Francesco 🌸 Madagascar</p>
+        <p>Last Update: <span id="lastModified"></span></p>
     </footer>
+    
+    <script>
+        document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
 </body>
 </html>
