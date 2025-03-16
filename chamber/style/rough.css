@@ -61,34 +61,55 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 60px 20px;
-    background-color: #f4f4f4;
+    justify-content: space-between;
+    width: 100%;
+    height: 80vh;
+    padding: 50px;
+    background-color: #f4f4f4; /* Light background for contrast */
 }
 
-.hero img {
-    max-width: 180px;
-    height: auto;
+.hero-content {
+    max-width: 50%;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #0056b3;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #333;
     margin-bottom: 20px;
 }
 
 .cta {
-    background-color: #0056b3;
+    background: #0056b3;
     color: white;
-    font-size: 18px;
     padding: 12px 24px;
+    font-size: 18px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .cta:hover {
-    background-color: #003d82;
+    background: #003f7f;
 }
+
+.hero-image {
+    max-width: 50%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional styling */
+}
+
 
 /* Info Section */
 .info {

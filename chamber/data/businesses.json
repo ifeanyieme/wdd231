@@ -1,0 +1,59 @@
+[
+    {
+      "name": "Abia Tech Solutions",
+      "address": "123 Tech Street, Umuahia, Abia State",
+      "phone": "+234 800 123 4567",
+      "website": "https://naijaspider.com/services/logistics-services/abia/isiala-ngwa-north",
+      "image": "image/chamber 3.avif",
+      "membership": 3
+    },
+    {
+      "name": "Ngwa Logistics",
+      "address": "45 Market Road, Aba, Abia State",
+      "phone": "+234 700 654 3210",
+      "website": "https://ngwalogistics.com",
+      "image": "image/chamber 1.avif",
+      "membership": 2
+    },
+    {
+      "name": "Enyimba Fashion House",
+      "address": "10 Enyimba Street, Aba, Abia State",
+      "phone": "+234 901 234 5678",
+      "website": "https://enyimbafashion.com",
+      "image": "image/chamber 2.avif",
+      "membership": 1
+    },
+    {
+      "name": "Aba Digital Marketing",
+      "address": "23 Aba Road, Umuahia, Abia State",
+      "phone": "+234 905 678 1234",
+      "website": "https://abadigitalmarketing.com/about-us/",
+      "image": "image/chamber 4.avif",
+      "membership": 2
+    },
+    {
+      "name": "Eastern Agricultural Exporters",
+      "address": "88 Agro Street, Abia State",
+      "phone": "+234 803 567 9876",
+      "website": "https://www.maersk.com/de-de/insights/digitalisation/2023/09/28/african-agricultural-exports",
+      "image":"image/chamber 5.avif",
+      "membership": 3
+    },
+    {
+      "name": "Chic Clothing",
+      "address": "55 Boutique Lane, Aba, Abia State",
+      "phone": "+234 802 456 7890",
+      "website": "https://chicclothing.com",
+      "image": "image/chamber 6.avif",
+      "membership": 1
+    },
+    {
+      "name": "Abia Realty Group",
+      "address": "34 Real Estate Ave, Umuahia",
+      "phone": "+234 811 678 4321",
+      "website": "https://abiarealty.com",
+      "image": "image/chamber hero.avif",
+      "membership": 3
+    }
+  ]
+  
