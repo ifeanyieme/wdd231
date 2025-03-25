@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Fetch and display weather information
 async function fetchWeather() {
-    const apiKey = "c533ba184ac48e09c20921835b9171b0"; // Replace with a valid OpenWeatherMap API key
-    const city = "Umuahia,NG"; // Example location (Abia State)
-    const url = `https://api.openweathermap.org/data/2.5/forecast?q=${Abia}&units=metric&appid=${c533ba184ac48e09c20921835b9171b0}`;
+    const apiKey = "c533ba184ac48e09c20921835b9171b0";
+    const city = "Umuahia,NG"; 
+    const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
 
     try {
         const response = await fetch(url);

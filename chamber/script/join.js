@@ -100,3 +100,5 @@ document.getElementById("timestamp").value = new Date().toISOString();
         function closeModal() {
             document.querySelectorAll(".modal").forEach(modal => modal.style.display = "none");
         }
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = document.lastModified;
