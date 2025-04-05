@@ -1,0 +1,30 @@
+:root {
+    --primary-color: #1e88e5;
+    --secondary-color: #e3f2fd;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--secondary-color);
+    color: #333;
+    padding: 1rem;
+    line-height: 1.6;
+  }
+  
+  h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  .wireframes img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+  }
+  
