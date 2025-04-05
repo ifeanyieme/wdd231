@@ -28,7 +28,7 @@ header {
 }
 
 .logo img {
-    max-width: 70px; /* Adjust logo size */
+    max-width: 70px;
     height: auto;
     margin-right: 12px;
 }
@@ -66,7 +66,7 @@ nav ul li a:hover {
     width: 100%;
     height: 80vh;
     padding: 50px;
-    background-color: #f4f4f4; /* Light background for contrast */
+    background-color: #f4f4f4;
 }
 
 .hero-content {
@@ -107,9 +107,8 @@ nav ul li a:hover {
 .hero-image img {
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Optional styling */
+    border-radius: 8px;
 }
-
 
 /* Info Section */
 .info {
@@ -190,26 +189,105 @@ footer {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .info, .business-list {
+    /* Header Adjustments */
+    header {
         flex-direction: column;
-        gap: 15px;
+        text-align: center;
     }
 
-    .info div, .business {
-        width: 100%;
-    }
-
-    .hero {
-        padding: 40px 15px;
-    }
-
-    .hero img {
-        max-width: 150px;
+    .logo h1 {
+        font-size: 1.8rem;
     }
 
     nav ul {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 15px;
+    }
+
+    nav ul li a {
+        padding: 10px 15px;
+        font-size: 1.1rem;
+    }
+
+    /* Hero Section Adjustments */
+    .hero {
+        flex-direction: column;
+        padding: 30px 15px;
+        height: auto;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Info Section Adjustments */
+    .info {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .info div {
+        width: 100%;
+    }
+
+    /* Business Listings Adjustments */
+    .business-list {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .business {
+        width: 100%;
+        text-align: center;
+    }
+
+    .business img {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Footer Adjustments */
+    footer {
+        padding: 15px 10px;
+    }
+
+    .social-links a {
+        margin: 0 8px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Additional Adjustments for Smaller Screens */
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .cta {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .info h2 {
+        font-size: 18px;
+    }
+
+    .business p {
+        font-size: 12px;
     }
 }

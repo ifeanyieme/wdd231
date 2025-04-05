@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover local highlights and stats from our chamber members and community." />
+  <title>Discover | Abia Chamber of Commerce</title>
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="style/discover.css" />
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+          <img src="image/chamberlogo.avif" alt="Abia Chamber of Commerce Logo" class="logo">
+          <h1>Abia Chamber of Commerce</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html" class="active">Discover</a></li>
+          </ul>
+        </nav>
+    </header>
+      
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source media="(max-width: 600px)" srcset="images/hero-small.webp" />
+        <img src="image/chamber 6.avif" alt="Welcome to Abia Chamber of Commerce" loading="lazy" />
+      </picture>
+      <div class="hero-text">
+        <h2>Discover Opportunities in Abia</h2>
+        <a href="join.html" class="cta-button">Join Us Today</a>
+      </div>
+    </section>
+
+    <section class="discover-section container">
+        <div class="gallery">
+          <h3>Explore the City</h3>
+          <div class="gallery-grid">
+            <img src="image/chamber 7.avif" alt="City Park" loading="lazy" />
+            <img src="image/chamber 8.avif" alt="Downtown Shops" loading="lazy" />
+            <img src="image/chamber 9.avif" alt="Cultural Festival" loading="lazy" />
+            <img src="image/chamber 10.avif" alt="Library" loading="lazy" />
+            <img src="image/airport.avif" alt="Tech Hub" loading="lazy" />
+            <img src="image/chamber 1.avif" alt="Community Center" loading="lazy" />
+            <img src="image/airport.avif" alt="Tech Hub" loading="lazy" />
+            <img src="image/culture 1.avif" alt="Community Center" loading="lazy" />
+            <img src="image/culture 2.avif" alt="Community Center" loading="lazy" />
+            <img src="image/culture 3.jpg" alt="Community Center" loading="lazy" />
+            <img src="image/culture 4.jpg" alt="Community Center" loading="lazy" />
+            <img src="image/culture 5.avif" alt="Community Center" loading="lazy" />
+            <img src="image/culture 6.avif" alt="Community Center" loading="lazy" />
+            <img src="image/culture 7.avif" alt="Community Center" loading="lazy" />
+            <img src="image/airport.avif" alt="Community Center" loading="lazy" />
+            <img src="image/chamberlogo.avif" alt="Community Center" loading="lazy" />
+          </div>
+        </div>
+      
+
+      <aside class="sidebar">
+        <aside class="sidebar">
+            <h3>Community Facts</h3>
+            <ul>
+              <li>Population: 3.5 million (Abia State)</li>
+              <li>Founded: 1991 (Abia State) / Ancient History (Aba and Umuahia)</li>
+              <li>Key Industries: Agriculture, Oil & Gas, Textiles, Manufacturing, Trade</li>
+              <li>Annual Visitors: Over 150,000 (mainly for trade, business, and cultural events)</li>
+              <li>Average Household Income: ₦600,000 annually (approx.)</li>
+              <li>Notable Landmarks: National War Museum (Umuahia), Aba Arts & Crafts Market, Azumini Blue River</li>
+              <li>Public Services: 24/7 Health Clinics, Abia State Library, Abia State Polytechnic</li>
+              <li>Public Transportation: Bus Services, Taxis, Tricycles (Keke NAPEP), Motorcycles (Okada)</li>
+              <li>Annual Events: Abia State Trade Fair, New Yam Festival, Aba International Trade Fair</li>
+              <li>Climate: Tropical Climate with a Wet Season (May–October), Dry Season (November–April), Average Temperature: 27°C (81°F)</li>
+            </ul>
+            <p><strong>Visits:</strong> <span id="visit-count">0</span></p>
+          </aside>
+          
+        <p><strong>Visits:</strong> <span id="visit-count">0</span></p>
+      </aside>
+    </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <p>&copy; <span id="year"></span> Abia Chamber of Commerce</p>
+        <p>123 Business Rd, Commerce City</p>
+        <p>Email: <a href="mailto:info@commerce.org">info@commerce.org</a> | Phone: <a href="tel:+1234567890">+123-456-7890</a></p>
+      </div>
+  
+      <div class="footer-newsletter">
+        <h4>Subscribe to our Newsletter</h4>
+        <form action="#" method="POST">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn-submit">Subscribe</button>
+        </form>
+      </div>
+  
+      <div class="footer-social-media">
+        <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank">
+          <img src="image/facebook.avif" alt="Facebook">
+        </a>
+        <a href="https://x.com/?lang=en" aria-label="Twitter" target="_blank">
+          <img src="image/twitter.avif" alt="Twitter">
+        </a>
+        <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank">
+          <img src="image/instagram.avif" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank">
+          <img src="image/linkedin.avif" alt="LinkedIn">
+        </a>
+      </div>
+      <p>Last updated: <span id="lastModified"></span></p>
+
+  <script>
+    // JavaScript to display last modified date
+    document.getElementById('lastModified').textContent = document.lastModified;
+  </script>
+    </div>
+  </footer>
+  
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    let visitDisplay = document.getElementById("visit-count");
+    let numVisits = Number(localStorage.getItem("discover-visits")) || 0;
+    numVisits++;
+    localStorage.setItem("discover-visits", numVisits);
+    visitDisplay.textContent = numVisits;
+  </script>
+</body>
+</html>

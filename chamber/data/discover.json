@@ -1,0 +1,51 @@
+[
+    {
+      "name": "Central Park",
+      "address": "123 Park Lane",
+      "description": "A beautiful park with walking trails and gardens.",
+      "image": "../images/central-park.webp"
+    },
+    {
+      "name": "City Museum",
+      "address": "456 Museum St",
+      "description": "Explore the rich history and culture of our town.",
+      "image": "../images/museum.webp"
+    },
+    {
+      "name": "Farmers Market",
+      "address": "789 Market Ave",
+      "description": "Fresh produce and handmade goods from locals.",
+      "image": "../images/farmers-market.webp"
+    },
+    {
+      "name": "Historic Theater",
+      "address": "321 Theater Rd",
+      "description": "Live performances in a restored historic venue.",
+      "image": "../images/theater.webp"
+    },
+    {
+      "name": "Tech Innovation Hub",
+      "address": "101 Silicon Blvd",
+      "description": "A center for local startups and tech events.",
+      "image": "../images/tech-hub.webp"
+    },
+    {
+      "name": "Mountain Trails",
+      "address": "Trailhead Circle",
+      "description": "Hiking trails with breathtaking views.",
+      "image": "../images/mountain-trails.webp"
+    },
+    {
+      "name": "Local Library",
+      "address": "Library Plaza",
+      "description": "A quiet place for reading, learning, and discovery.",
+      "image": "../images/library.webp"
+    },
+    {
+      "name": "Aquatic Center",
+      "address": "99 Water St",
+      "description": "Indoor pools and aquatic fitness classes.",
+      "image": "../images/aquatic-center.webp"
+    }
+  ]
+  
