@@ -1,0 +1,660 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Header */
+  header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    text-decoration: underline;
+  }
+  
+/* Hero Section */
+.hero {
+    background: url('images/swim5.jpg') no-repeat center center/cover;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Dark overlay for better text contrast */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* Content container */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker overlay for readability */
+    border-radius: 15px;
+}
+
+/* Hero heading */
+.hero h1 {
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+    font-weight: normal; /* Removed bold */
+    letter-spacing: 1px;
+}
+
+/* Hero subheading */
+.hero p {
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    font-weight: normal; /* Removed bold */
+}
+
+/* Call-to-action button */
+.cta-btn {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    background-color: #ff6f61; /* Soft accent color */
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e55e50; /* Darker shade on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero p {
+        font-size: 1.4rem;
+    }
+
+    .cta-btn {
+        font-size: 1.1rem;
+        padding: 10px 25px;
+    }
+}
+
+
+/* Weekly Plan Section */
+.weekly-plan {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .weekly-plan h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #0056b3;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Table Container for Professional Look */
+  .table-container {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow-x: auto; /* Allow horizontal scrolling on small screens */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #0056b3;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  tbody tr:hover {
+    background-color: #f4f4f4;
+    cursor: pointer;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .weekly-plan h2 {
+      font-size: 2rem;
+    }
+  
+    table {
+      font-size: 1rem;
+    }
+  
+    th, td {
+      padding: 10px;
+    }
+  }
+  
+  /* Training Cards Section */
+  .training-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+    justify-items: center;
+  }
+  
+  .training-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .training-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .training-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .training-card h3 {
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .training-card p {
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .training-card .btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .training-card .btn:hover {
+    background-color: #003d7a;
+  }
+  
+  /* Skill Levels Section */
+  .skill-levels {
+    background-color: #e6f1ff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .levels-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    justify-items: center;
+  }
+  
+  .level-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .level-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #0056b3;
+  }
+  
+  .level-card p {
+    color: #666;
+  }
+  
+  /* Expert Tips Section */
+  .expert-tips {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .expert-tips h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0056b3;
+  }
+  
+  .expert-tips ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .expert-tips li {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+/* Video Tutorials Section */
+.video-section {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .video-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0056b3;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .video-section p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+/* Video Section Styling */
+.video-section {
+    background-color: #f3f8fc;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .video-section h2 {
+    font-size: 2.5rem;
+    color: #0056b3;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .video-section p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Video Grid Layout */
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  /* Video Item Styling */
+  .video-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .video-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .video-item iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+  }
+  
+  .video-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    margin: 15px 0;
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media (max-width: 768px) {
+    .video-section h2 {
+      font-size: 2rem;
+    }
+  
+    .video-section p {
+      font-size: 1rem;
+    }
+  
+    .video-item iframe {
+      height: 180px;
+    }
+  
+    .video-item h3 {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Meet Coaches Section */
+  .meet-coaches {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .meet-coaches h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #0056b3;
+  }
+  
+  .coach-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .coach-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .coach-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .coach-card h4 {
+    font-size: 1.5rem;
+    color: #0056b3;
+    margin-bottom: 10px;
+  }
+  
+  .coach-card p {
+    color: #666;
+  }
+/* Nutrition and Recovery Section */
+.nutrition-recovery {
+    background-color: #f3f8fc;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .nutrition-recovery h2 {
+    font-size: 2.5rem;
+    color: #0056b3;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .nutrition-recovery p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Nutrition List Styling */
+  .nutrition-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .nutrition-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .nutrition-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .nutrition-item .icon {
+    font-size: 3rem;
+    color: #0056b3;
+    margin-bottom: 15px;
+  }
+  
+  .nutrition-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .nutrition-item p {
+    font-size: 1rem;
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nutrition-recovery h2 {
+      font-size: 2rem;
+    }
+  
+    .nutrition-recovery p {
+      font-size: 1rem;
+    }
+  
+    .nutrition-item .icon {
+      font-size: 2.5rem;
+    }
+  
+    .nutrition-item h3 {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+  
+  footer h3 {
+    margin-bottom: 1rem;
+  }
+  
+  footer input, footer textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  footer button {
+    padding: 0.5rem 1rem;
+    background: var(--primary-color);
+    color: gray;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  footer button:hover {
+    background: #003f7f;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #0077cc; /* or whatever color matches your theme */
+  }
+  
+  footer .copyright {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Nav */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      gap: 0;
+      background-color: var(--primary-color);
+    }
+    .nav-links.show {
+      display: flex;
+    }
+  }
+  
+    .hero-section {
+      height: 300px;
+    }
+  
+    .hero-content h2 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .training-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  
+    .levels-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  
+    .video-grid {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+  
+    .coach-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  
+  

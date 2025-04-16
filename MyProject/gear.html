@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gear | Cycling & Swimming Hub</title>
+  <link rel="stylesheet" href="style/gear.css" />
+  <script defer src="script/gear.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <img src="images/swimming logo.jpg" alt="Site Logo" class="logo" />
+      <h1>Cycling & Swimming Hub</h1>
+    </div>
+    <nav>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="gear.html">Gear</a></li>
+        <li><a href="join.html">Join Us</a></li>
+        <li><button id="toggle-theme">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="gear-section">
+    <section class="hero-gear">
+      <h1>Top Gear for Cyclists & Swimmers</h1>
+      <p>Explore our handpicked gear to enhance your performance and enjoyment.</p>
+    </section>
+
+    <section class="gear-grid">
+      <div class="gear-card">
+        <i class="fas fa-bicycle gear-icon"></i>
+        <h2>Road Bikes</h2>
+        <p>Lightweight, aerodynamic bikes built for speed and endurance.</p>
+      </div>
+      <div class="gear-card">
+        <i class="fas fa-tshirt gear-icon"></i>
+        <h2>Swimwear</h2>
+        <p>Durable, high-performance swimwear for training and competition.</p>
+      </div>
+      <div class="gear-card">
+        <i class="fas fa-glasses gear-icon"></i>
+        <h2>Goggles</h2>
+        <p>Anti-fog, UV-protected goggles for crystal-clear underwater vision.</p>
+      </div>
+      <div class="gear-card">
+        <i class="fas fa-hard-hat gear-icon"></i>
+        <h2>Helmets</h2>
+        <p>Safety-first helmets with sleek designs for optimal comfort and protection.</p>
+      </div>
+      <div class="gear-card">
+        <i class="fas fa-water gear-icon"></i>
+        <h2>Swim Accessories</h2>
+        <p>Kickboards, fins, and more to power up your water workouts.</p>
+      </div>
+      <div class="gear-card">
+        <i class="fas fa-shoe-prints gear-icon"></i>
+        <h2>Cycling Shoes</h2>
+        <p>Clip-in and performance shoes to give you better power transfer and grip.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>About</h3>
+        <p>We are passionate about cycling and swimming. Our goal is to help you stay fit and connected.</p>
+      </div>
+      <div>
+        <h3>Newsletter</h3>
+        <form>
+          <input type="email" placeholder="Your email" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div>
+        <h3>Feedback</h3>
+        <textarea placeholder="Your feedback"></textarea>
+        <button>Send</button>
+      </div>
+      <div>
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><img src="images/facebook.svg" alt="Facebook" /></a>
+          <a href="#"><img src="images/twitter.svg" alt="Twitter" /></a>
+          <a href="#"><img src="images/instagram.svg" alt="Instagram" /></a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">
+      &copy; <span id="year"></span> Cycling & Swimming Hub
+    </p>
+  </footer>
+
+</body>
+</html>

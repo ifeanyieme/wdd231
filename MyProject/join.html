@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join Us | Cycling & Swimming Hub</title>
+  <link rel="stylesheet" href="style/join.css"/>
+  <script defer src="script/join.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+          <img src="images/swimming logo.jpg" alt="Site Logo" class="logo">
+          <h1>Cycling & Swimming Hub</h1>
+        </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="gear.html">Gear</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+        <li><button id="toggle-theme">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="join-form-section">
+      <h2>Become a Member</h2>
+      <p>Get exclusive access to expert tips, event updates, and member-only gear discounts.</p>
+      
+      <form id="joinForm" novalidate>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required placeholder="John Doe" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="john@example.com" />
+
+        <label for="interest">Primary Interest:</label>
+        <select id="interest" name="interest" required>
+          <option value="">-- Please select --</option>
+          <option value="cycling">Cycling</option>
+          <option value="swimming">Swimming</option>
+          <option value="both">Both</option>
+        </select>
+
+        <label for="bio">Tell us about your experience:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="I'm a beginner swimmer looking to train..."></textarea>
+
+        <button type="submit">Join Now</button>
+        <p id="form-message" class="form-message"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Cycling & Swimming Hub. All rights reserved.</p>
+  </footer>
+</body>
+</html>
